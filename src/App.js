@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import List from './components/List';
+import Input from './components/Input';
+import 'bootstrap/dist/css/bootstrap.css';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container my-5">
+      <div className='col-8 mx-auto p-2' style={{backgroundColor:'#46529D',}}>
+      <Input />
+     <List />
+      </div>
     </div>
   );
 }
